@@ -1,0 +1,228 @@
+@font-face {
+    font-family: sfPro;
+    src: url(fonts/sf-pro/SF-Pro.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sfPro;
+    src: url(fonts/sf-pro/SF-Pro-Italic.ttf);
+    font-style: italic;
+}
+
+body {
+    font-family: sfPro, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* For JS */
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.done {
+    color: green;
+    text-decoration: line-through;
+    background-color: #00ff0033;
+}
+
+.important {
+    color: #0077ff;
+    background-color: #009fff33;
+}
+
+/*Common Properties of primary containers*/
+header, main, footer {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main, footer {
+    padding: 0.65rem 0.5rem;
+}
+
+/* Container */
+
+#container {
+    max-width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add */
+
+header {
+    border-left: 1px solid #00000033;
+    border-right: 1px solid #00000033;
+    border-bottom: 1px solid #00000033;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff33;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin: 0 0 0 0.5rem;
+    padding: 0.2em;
+}
+
+header div {
+    display: flex;
+    justify-content: right;
+}
+
+header img {
+    margin: 0 0.5rem 0 0;
+    padding: 0.15rem;
+    width: 1.5rem;
+    transition: background-color 0.12s ease-in;
+    border-radius: 4px;
+}
+
+header img:hover {
+    background-color: #00000033;
+    transition: background-color 0.12s ease-in;
+}
+
+/* Menu */
+
+nav ul {
+    position: absolute;
+    right: 0.2rem;
+    list-style: none;
+    margin: 0.5rem 0 0 0;
+    width: max-content;
+    padding: 0;
+    border: 1px solid #00000033;
+    border-radius: 20px;
+    background-color: #ffffff33;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+nav ul li {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav ul li:nth-child(1), nav ul li:nth-child(2) {
+    border-bottom: 1px solid #00000033;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu-close {
+    cursor: pointer;
+}
+
+#menu-close:hover {
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+    margin-top: 1rem;
+}
+/* Adder */
+
+#adder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#new-task {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #00000033;
+    font-size: 1rem;
+}
+
+#add-new-task {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.12s ease-in;
+    font-size: 1rem;
+}
+
+#add-new-task:hover {
+    background-color: #00000033;
+    transition: background-color 0.12s ease-in;
+}
+
+#tasks {
+    padding-top: 1rem;
+}
+
+.task {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #00000033;
+    border-radius: 20px;
+}
+
+.ask div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.task div img {
+    padding: 0.2rem;
+    margin: 0 0.22rem;
+    border-radius: 0.2rem;
+    transition: background-color 0.12s ease-in;
+}
+
+.task div img:hover {
+    transition: background-color 0.12s ease-in;
+}
+
+.done-btn:hover {
+    background-color: #00ff0033;
+}
+
+.delete-btn:hover {
+    background-color: #ff000033;
+}
+
+.important-btn:hover {
+    background-color: #009fff33;
+}
+
+/********/
+/* Media  Queries */
+
+@media (max-width: 600px){
+    header {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
