@@ -52,7 +52,8 @@ main, footer {
 
 #container {
     max-width: 600px;
-    position: relative;
+    position: sticky;
+    top: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,8 +72,6 @@ header {
     background-color: #ffffff33;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
 }
 
 header h1 {
