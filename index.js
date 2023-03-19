@@ -63,10 +63,3 @@ function markImportant(n) {
         task.classList.add("important");
     }
 }
-
-
-
-
-
-
-
