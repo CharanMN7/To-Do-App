@@ -18,18 +18,13 @@ body {
 
 /* For JS */
 
-.visible {
-    visibility: visible;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
 .done {
     color: green;
-    text-decoration: line-through;
     background-color: #00ff0033;
+}
+
+.done-txt {
+    text-decoration: line-through;
 }
 
 .important {
@@ -64,8 +59,7 @@ header {
     border-left: 1px solid #00000033;
     border-right: 1px solid #00000033;
     border-bottom: 1px solid #00000033;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
