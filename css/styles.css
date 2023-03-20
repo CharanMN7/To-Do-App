@@ -18,18 +18,13 @@ body {
 
 /* For JS */
 
-.visible {
-    visibility: visible;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
 .done {
     color: green;
-    text-decoration: line-through;
     background-color: #00ff0033;
+}
+
+.done-txt {
+    text-decoration: line-through;
 }
 
 .important {
