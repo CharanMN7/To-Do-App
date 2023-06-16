@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="scripts/jQuery-3.6.3.min.js"></script>
     <script src="scripts/index2.js"></script>
     <title>To-Do App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <header>
-            <h1>To Do List</h1>
-            <div>
-<!--                 <img src="css/images/icons/sun.svg" alt=""> -->
-                <img src="css/images/icons/menu.svg" alt="" id="menu-btn">
-            </div>
-        </header>
-        <nav>
-            <ul id="menu">
-                <li><a href="https://github.com/CharanMN7/To-Do-App" target="_blank">View Project</a></li>
-                <li><a href="https://bio.link/charanmanikanta" target="_blank">About</a></li>
-                <li id="menu-close">Close</li>
-            </ul>
-        </nav>
+      <header>
+        <h1>To Do List</h1>
+        <div>
+          <!-- <img src="css/images/icons/sun.svg" alt="" id="theme" /> -->
+          <img src="css/images/icons/menu.svg" alt="" id="menu-btn" />
+        </div>
+      </header>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="https://github.com/CharanMN7/To-Do-App" target="_blank"
+              >View Project</a
+            >
+          </li>
+          <li>
+            <a href="https://bio.link/charanmanikanta" target="_blank">About</a>
+          </li>
+          <li id="menu-close">Close</li>
+        </ul>
+      </nav>
     </div>
 
     <!-- The Task HTML
@@ -39,18 +45,13 @@
     -->
 
     <main>
-        <form id="adder">
-            <input type="text" id="new-task" value="">
-            <button id="add-new-task" type="submit">Add</button>
-        </form>
-        <div id="tasks">
-            
-        </div>
-
+      <form id="adder">
+        <input type="text" id="new-task" value="" />
+        <button id="add-new-task" type="submit">Add</button>
+      </form>
+      <div id="tasks"></div>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
