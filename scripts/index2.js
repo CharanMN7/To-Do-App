@@ -72,8 +72,8 @@ $(function () {
 
   // Form to add tasks
   $("#adder").on("submit load", function (e) {
-    var task = $("#new-task").val();
-    if ($.trim(task) !== "") {
+    var task = $.trim($("#new-task").val());
+    if (task !== "") {
       // Task HTML:
       res = '<div class="task">';
       res += '<div class="task-text">' + task + "</div>";
@@ -89,11 +89,12 @@ $(function () {
 
       // Adding the task:
       $("#tasks").append(res);
-      $("#new-task").val("");
 
       // Defines the actions
       $.fn.actions();
     }
+
+    $("#new-task").val("");
     e.preventDefault();
   });
 
